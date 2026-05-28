@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -181,155 +182,6 @@
         }
 
         /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            width: 100%;
-        }
-
-        .skill-card {
-            background: var(--card-bg);
-            border-top: 4px solid var(--electric-blue);
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 68, 255, 0.2);
-        }
-
-        .skill-card h3 {
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-
-        /* Projects Section */
-        .games-container {
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-            width: 100%;
-            align-items: center;
-        }
-
-        .game-wrapper {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-        }
-
-        .game-wrapper h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        canvas {
-            background: #000;
-            display: block;
-            margin: 0 auto;
-            border-radius: 6px;
-        }
-
-        .pong-canvas {
-            border: 3px solid var(--pong-green);
-        }
-
-        .maze-canvas {
-            border: 3px solid var(--electric-blue);
-        }
-
-        .game-instructions {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* Contact Section */
-        .contact-info {
-            background: var(--card-bg);
-            padding: 3rem;
-            border-radius: 15px;
-            border: 1px solid rgba(0, 68, 255, 0.2);
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .contact-info p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info strong {
-            color: var(--electric-glow);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            #home {
-                flex-direction: column-reverse;
-                text-align: center;
-                gap: 2rem;
-            }
-            .profile-placeholder {
-                width: 250px;
-                height: 250px;
-            }
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="logo"><span>D</span>D</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#intro">Who I Am</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Games</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <div class="hero-content">
-            <h1>Hi! I'm <span>Akash</span>.</h1>
-            <p class="hero-p">A Person with Fiery Passion Filled with Confidence, Positivtiy and Humor.</p>
-        </div>
-        <div class="profile-pic-container">
-            <div class="profile-placeholder">
-                <img class="profile-img" src="Akash's image.jpg" alt="Akash Photo" onerror="this.style.display='none'; this.parentNode.innerHTML='<span>[ Akash Photo ]</span>';">
-            </div>
-        </div>
-    </section>
-
-    <section id="intro">
-        <h2 class="section-title">Introduction</h2>
-        <div class="intro-card">
-            <p>I am a genuinely positive, confident, and outgoing individual. I thrive on bringing high energy and charisma to everything I do, whether I'm building hardware, writing clean software, or commanding a room's attention.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="intro-card">
-            <p style="margin-bottom: 1.5rem;">When I'm not behind a screen, you'll find me dominating on the <strong>badminton</strong> court, practicing my discipline in <strong>karate</strong>, or out hanging out and making memories with my friends.</p>
-            <p><strong>My Debugging Philosophy:</strong> When my code hits a wall, I don't panic. I solve problems by stopping to think, thoroughly reading and rereading the code line by line, discovering exactly what the problem is, and executing the fix.</p>
-        </div>
-    </section>
-
-    <section id="skills
-    /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -664,7 +516,7 @@
                 playerY = nextY;
                 
                 if(mazeMap[playerY][playerX] === 3) {
-                    alert("Awesome job, Akash! You solved the maze!");
+                    alert("Awesome job way to go!!! You solved the maze!");
                     playerX = 1;
                     playerY = 1;
                 }
